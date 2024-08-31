@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Copy Current URL",
+    "version": "1",
+    "description": "An extension which copies the current tab URL by the simple click of a keyboard hotkey, the default is set as 'Ctrl+Shift+V'",
+
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "clipboardWrite"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "commands": {
+        "copy-url": {
+            "suggested_key": {
+                "default": "Alt+Shift+C"
+            }
+        }
+    }
+}
